@@ -12,7 +12,6 @@ RUN apt install python3.8
 
 # install library
 RUN pip install tensorflow
-RUN pip install opencv-python
 RUN pip install flask
 
 # copy source
@@ -22,5 +21,5 @@ COPY . /usr/src/app
 WORKDIR /usr/src/app
 
 # start server
-EXPOSE 9000
+EXPOSE 8998
 CMD    nohup python3 serve.py > log 2>&1 &
