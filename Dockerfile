@@ -9,7 +9,7 @@ RUN apt install -y python3
 RUN apt install -y python3-pip
 
 # install library
-RUN pip install flask
+RUN pip3 install flask
 
 # copy source
 COPY . /usr/src/app
